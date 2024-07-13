@@ -154,7 +154,7 @@ section{
 }
 
 .typing-text span::before{
-    content: 'Talented Editors';
+    content: 'Editors';
     color: var(--main-color);
     animation: words 20s infinite;
 }
@@ -178,7 +178,7 @@ section{
 
 @keyframes words {
     0%, 20% {
-        content: 'Talented Editors';
+        content: 'Editors';
     }
     /* 21%, 40% {
         content: 'Every Style';
@@ -689,6 +689,10 @@ section{
   /* responsiveness */
 
   @media(max-width:1285px){
+    html {
+        font-size: 55%;
+    }
+
     #menu-icon{
         display: block;
     }
@@ -744,3 +748,11 @@ section{
         flex-direction: column;
     }
   }
+   @media(max-width:991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+    section {
+        padding: 10rem 3% 2rem;
+    }
+   }
